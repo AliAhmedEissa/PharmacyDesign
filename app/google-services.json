@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "209792928078",
+    "firebase_url": "https://pharmacyapp-66183.firebaseio.com",
+    "project_id": "pharmacyapp-66183",
+    "storage_bucket": "pharmacyapp-66183.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209792928078:android:2be128ed21c5ffeb54361f",
+        "android_client_info": {
+          "package_name": "com.example.pharmacydesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209792928078-c7e2ghecerc31qtrkcmkd7mm6kltog2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqBu2ilgdeZtpNJmlDY9XEvkQovzPyXaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209792928078-c7e2ghecerc31qtrkcmkd7mm6kltog2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
