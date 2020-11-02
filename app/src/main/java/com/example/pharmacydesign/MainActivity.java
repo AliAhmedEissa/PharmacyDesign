@@ -1,18 +1,23 @@
 package com.example.pharmacydesign;
 
+import android.annotation.SuppressLint;
+import android.app.FragmentTransaction;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.pharmacydesign.Orders_Map.MapFr;
+import com.example.pharmacydesign.Orders_Map.OrderOnClickFr;
 import com.example.pharmacydesign.Orders_Map.Orders;
 import com.google.android.material.navigation.NavigationView;
 
@@ -26,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     NavigationView navView;
     DrawerLayout drawerLayout;
-
+    CardView cardView;
 
     List<String> tabList;
 
@@ -56,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.show(1, false);
 
 
-
     }
+
 
 
     private void init() {
@@ -66,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         navView = findViewById(R.id.nav_view);
         drawerLayout = findViewById(R.id.drawer_layout);
         toolbar = findViewById(R.id.toolbar);
+        cardView = findViewById(R.id.orderitem);
 
 
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_orders));

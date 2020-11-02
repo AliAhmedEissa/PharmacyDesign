@@ -3,7 +3,9 @@ package com.example.pharmacydesign;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -13,7 +15,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Signup extends AppCompatActivity implements OnMapReadyCallback {
+public class Signup2 extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
@@ -78,5 +80,10 @@ MapView mapView;
     public void onLowMemory() {
         super.onLowMemory();
         mapView.onLowMemory();
+    }
+
+    public void Comp_btn(View view) {
+        Intent intent = new Intent(Signup2.this,MainActivity.class);
+        startActivity(intent);
     }
 }
