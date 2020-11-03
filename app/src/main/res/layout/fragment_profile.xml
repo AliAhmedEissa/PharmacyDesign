@@ -178,8 +178,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
-
         <androidx.cardview.widget.CardView
             android:id="@+id/changePasswordBtn"
             android:layout_width="160dp"
@@ -196,7 +194,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="41dp"
                 android:gravity="center"
                 android:text="Change Password"
                 android:textColor="@android:color/white"

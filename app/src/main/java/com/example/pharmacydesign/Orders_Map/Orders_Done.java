@@ -14,6 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 
 import com.example.pharmacydesign.R;
 import com.google.android.material.tabs.TabLayout;
@@ -21,7 +22,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Orders extends Fragment {
+public class Orders_Done extends Fragment {
 
     private Orders_VM mViewModel;
     View view;
@@ -29,22 +30,17 @@ public class Orders extends Fragment {
     protected TabLayout tablayout;
     List<String> tabList;
 
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-
-
         view = inflater.inflate(R.layout.fr_orders, container, false);
 
-//        getActivity().setTitle("Orders");
-//        tablayout = view.findViewById(R.id.tabLayout);
-//        viewPager = view.findViewById(R.id.viewPager);
+        getActivity().setTitle("Orders");
+        tablayout = view.findViewById(R.id.tabLayout);
+        viewPager = view.findViewById(R.id.viewPager);
 
         return view;
     }
-
-
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -58,12 +54,8 @@ public class Orders extends Fragment {
             TabLayout.Tab tab = tablayout.newTab();
             tab.setText(source);
             tab.setTag(source);
-
             tablayout.addTab(tab);
         }
     }
-
-
-
 
 }

@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
+
 import com.example.pharmacydesign.Base.BaseFragment;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -20,8 +22,7 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
     ImageView profileBackground;
     CircleImageView profileImage;
     EditText profileUserNameEdit, profileEmailEdit, profilePhoneEdit;
-    Button changePasswordBtn;
-
+    CardView changePasswordBtn;
 
     Dialog dialog;
 
@@ -30,11 +31,12 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
     }
 
     View view;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view =  inflater.inflate(R.layout.fragment_profile, container, false);
+        view = inflater.inflate(R.layout.fragment_profile, container, false);
         initView(view);
         getActivity().setTitle("Profile");
         profileCancelText.setVisibility(View.GONE);
@@ -59,12 +61,11 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
         changePasswordBtn.setOnClickListener(this);
         profileEditText.setOnClickListener(this);
 
-
     }
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.changePasswordBtn){
+        if (view.getId() == R.id.changePasswordBtn) {
             dialog = new Dialog(getActivity());
             dialog.setContentView(R.layout.change_password_layout);
 
@@ -92,8 +93,8 @@ public class ProfileFragment extends BaseFragment implements View.OnClickListene
                     dialog.dismiss();
                 }
             });
-        }
-        else if (view.getId() == R.id.profileEditText){
+
+        } else if (view.getId() == R.id.profileEditText) {
             profileCancelText.setVisibility(View.VISIBLE);
             profileEditText.setText("Save");
 
