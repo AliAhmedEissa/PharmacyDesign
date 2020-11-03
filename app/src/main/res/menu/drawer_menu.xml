@@ -6,13 +6,18 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/Profile"
-            android:title="Profile" />
-        <item
-            android:id="@+id/nav_Orders"
+            android:id="@+id/Orders"
+            android:icon="@drawable/ic_orders"
             android:title="Orders" />
+
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+
         <item
             android:id="@+id/Faq"
+            android:icon="@drawable/ic_faq"
             android:title="FAQ" />
 
     </group>
@@ -20,11 +25,12 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/AboutUs"
                 android:title="About Us" />
             <item
                 android:id="@+id/SignOut"
-                android:title="Sign Out" />
+                android:icon="@drawable/ic_logout"
+                android:title="Log Out" />
         </menu>
     </item>
 

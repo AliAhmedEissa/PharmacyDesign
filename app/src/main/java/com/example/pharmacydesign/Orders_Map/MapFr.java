@@ -18,20 +18,21 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapFr extends Fragment implements OnMapReadyCallback {
 
-    public MapFr() { }
+    public MapFr() {
+    }
 
-GoogleMap mMap;
+    GoogleMap mMap;
 
-    MapView mapView ;
+    MapView mapView;
     View view;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view =  inflater.inflate(R.layout.activity_maps, container, false);
-        mapView=view.findViewById(R.id.map);
+        view = inflater.inflate(R.layout.activity_maps, container, false);
+        mapView = view.findViewById(R.id.map);
         mapView.onCreate(savedInstanceState);
-
         mapView.getMapAsync(this);
 
         return view;
